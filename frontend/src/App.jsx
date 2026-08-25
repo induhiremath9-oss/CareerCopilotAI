@@ -9,7 +9,7 @@ import {
 
 import Home from "./pages/Home";
 import CareerRoadmap from "./pages/CareerRoadmap";
-import CareerMatch from "./pages/CareerMatch";
+import CareerMatch from "./pages/CareerMatch.jsx";
 import ResumeAnalyzer from "./pages/ResumeAnalyzer";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
