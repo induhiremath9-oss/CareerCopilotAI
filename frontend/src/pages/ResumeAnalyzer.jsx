@@ -54,7 +54,7 @@ const ResumeAnalyzer = () => {
       }
 
       const response = await fetch(
-        "http://localhost:5000/api/ai/analyze-resume",
+        "https://careercopilot-ai-jl8g.onrender.com/api/ai/analyze-resume",
         {
           method: "POST",
           body: formData,
