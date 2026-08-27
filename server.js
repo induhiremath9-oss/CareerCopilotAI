@@ -18,7 +18,10 @@ const app = express();
 
 app.use(
   cors({
-    origin: "https://career-copilot-ai-4us2.vercel.app",
+    origin: [
+      "http://localhost:5173",
+      "https://career-copilot-ai-4us2.vercel.app",
+    ],
     credentials: true,
   })
 );
