@@ -9,6 +9,13 @@ const { analyzeResume } = require("../controllers/aiController");
 
 const router = express.Router();
 
+router.get("/test", (req, res) => {
+  res.json({
+    success: true,
+    message: "AI routes are working"
+  });
+});
+
 /* =========================================================
    UPLOAD CONFIGURATION
    ========================================================= */
