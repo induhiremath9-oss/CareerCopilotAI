@@ -20,7 +20,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://career-copilot-ai-4us2.vercel.app",
+      "https://career-copilot-26orvkqdq-induhiremath9-oss.vercel.app",
     ],
     credentials: true,
   })
