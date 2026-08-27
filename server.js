@@ -18,7 +18,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: true,
+    origin: "https://career-copilot-ai-4us2-qd37915z2-induhiremath9-oss.vercel.app",
     credentials: true,
   })
 );
