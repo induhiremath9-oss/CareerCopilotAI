@@ -18,11 +18,10 @@ const app = express();
 
 app.use(
   cors({
-    origin: "https://career-copilot-ai-4us2-qd37915z2-induhiremath9-oss.vercel.app",
+    origin: true,
     credentials: true,
   })
 );
-
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -46,13 +45,14 @@ app.use("/api/users", userRoutes);
 app.use("/api/resumes", resumeRoutes);
 
 // ⭐ THIS IS THE IMPORTANT LINE
-app.use("/api/ai", aiRoutes);
 app.get("/api/ai/test", (req, res) => {
   res.json({
     success: true,
     message: "AI route is working"
   });
 });
+
+app.use("/api/ai", aiRoutes);
 
 // ===============================
 // 404 HANDLER
