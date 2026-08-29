@@ -47,6 +47,12 @@ app.use("/api/resumes", resumeRoutes);
 
 // ⭐ THIS IS THE IMPORTANT LINE
 app.use("/api/ai", aiRoutes);
+app.get("/api/ai/test", (req, res) => {
+  res.json({
+    success: true,
+    message: "AI route is working"
+  });
+});
 
 // ===============================
 // 404 HANDLER
